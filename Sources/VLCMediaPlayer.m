@@ -50,6 +50,7 @@
 /* Notification Messages */
 NSString *const VLCMediaPlayerTimeChanged    = @"VLCMediaPlayerTimeChanged";
 NSString *const VLCMediaPlayerStateChanged   = @"VLCMediaPlayerStateChanged";
+NSString *const VLCMediaPlayerScrambledChanged   = @"VLCMediaPlayerScrambledChanged";
 
 NSString * VLCMediaPlayerStateToString(VLCMediaPlayerState state)
 {
@@ -132,6 +133,18 @@ static void HandleMediaPlayerMediaChanged(const libvlc_event_t * event, void * s
 
     }
 }
+
+static void HandleScrambledChanged(const libvlc_event_t * event, void * self)
+{
+    @autoreleasepool {
+        
+        [[VLCEventManager sharedManager] callOnMainThreadDelegateOfObject:(__bridge id)(self)
+                                                       withDelegateMethod:@selector(mediaPlayerScrambledChanged:)
+                                                     withNotificationName:VLCMediaPlayerScrambledChanged];
+        
+    }
+}
+
 
 
 // TODO: Documentation
@@ -1144,6 +1157,8 @@ static void HandleMediaPlayerMediaChanged(const libvlc_event_t * event, void * s
     libvlc_event_attach(p_em, libvlc_MediaPlayerPositionChanged,  HandleMediaPositionChanged,      (__bridge void *)(self));
     libvlc_event_attach(p_em, libvlc_MediaPlayerTimeChanged,      HandleMediaTimeChanged,          (__bridge void *)(self));
     libvlc_event_attach(p_em, libvlc_MediaPlayerMediaChanged,     HandleMediaPlayerMediaChanged,   (__bridge void *)(self));
+    
+    libvlc_event_attach(p_em, libvlc_MediaPlayerScrambledChanged, HandleScrambledChanged,          (__bridge void *)(self));
 }
 
 - (void)unregisterObservers
@@ -1160,6 +1175,8 @@ static void HandleMediaPlayerMediaChanged(const libvlc_event_t * event, void * s
     libvlc_event_detach(p_em, libvlc_MediaPlayerPositionChanged,  HandleMediaPositionChanged,      (__bridge void *)(self));
     libvlc_event_detach(p_em, libvlc_MediaPlayerTimeChanged,      HandleMediaTimeChanged,          (__bridge void *)(self));
     libvlc_event_detach(p_em, libvlc_MediaPlayerMediaChanged,     HandleMediaPlayerMediaChanged,   (__bridge void *)(self));
+    
+    libvlc_event_detach(p_em, libvlc_MediaPlayerScrambledChanged, HandleScrambledChanged,          (__bridge void *)(self));
 }
 
 - (void)mediaPlayerTimeChanged:(NSNumber *)newTime

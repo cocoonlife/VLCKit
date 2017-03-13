@@ -85,6 +85,8 @@ extern NSString * VLCMediaPlayerStateToString(VLCMediaPlayerState state);
  */
 - (void)mediaPlayerTimeChanged:(NSNotification *)aNotification;
 
+- (void)mediaPlayerScrambledChanged:(NSNotification *)aNotification;
+
 @end
 
 

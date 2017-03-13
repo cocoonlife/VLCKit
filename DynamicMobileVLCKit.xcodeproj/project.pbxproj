@@ -24,16 +24,16 @@
 		2209769E1E76CF8D00070E77 /* MobileVLCKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2209768F1E76CF8D00070E77 /* MobileVLCKit.h */; };
 		2209769F1E76CF8D00070E77 /* vlc-plugins.h in Headers */ = {isa = PBXBuildFile; fileRef = 220976901E76CF8D00070E77 /* vlc-plugins.h */; };
 		220976A01E76CF8D00070E77 /* VLCLibVLCBridging.h in Headers */ = {isa = PBXBuildFile; fileRef = 220976911E76CF8D00070E77 /* VLCLibVLCBridging.h */; };
-		220976A11E76CF8D00070E77 /* VLCEventManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 220976921E76CF8D00070E77 /* VLCEventManager.h */; };
-		220976A21E76CF8D00070E77 /* VLCLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 220976941E76CF8D00070E77 /* VLCLibrary.h */; };
-		220976A31E76CF8D00070E77 /* VLCMedia.h in Headers */ = {isa = PBXBuildFile; fileRef = 220976951E76CF8D00070E77 /* VLCMedia.h */; };
-		220976A41E76CF8D00070E77 /* VLCMediaThumbnailer.h in Headers */ = {isa = PBXBuildFile; fileRef = 220976961E76CF8D00070E77 /* VLCMediaThumbnailer.h */; };
-		220976A51E76CF8D00070E77 /* VLCMediaList.h in Headers */ = {isa = PBXBuildFile; fileRef = 220976971E76CF8D00070E77 /* VLCMediaList.h */; };
-		220976A61E76CF8D00070E77 /* VLCMediaPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 220976981E76CF8D00070E77 /* VLCMediaPlayer.h */; };
-		220976A71E76CF8D00070E77 /* VLCMediaListPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 220976991E76CF8D00070E77 /* VLCMediaListPlayer.h */; };
-		220976A81E76CF8D00070E77 /* VLCMediaDiscoverer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2209769A1E76CF8D00070E77 /* VLCMediaDiscoverer.h */; };
-		220976A91E76CF8D00070E77 /* VLCTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 2209769B1E76CF8D00070E77 /* VLCTime.h */; };
-		220976AA1E76CF8D00070E77 /* VLCAudio.h in Headers */ = {isa = PBXBuildFile; fileRef = 2209769C1E76CF8D00070E77 /* VLCAudio.h */; };
+		220976A11E76CF8D00070E77 /* VLCEventManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 220976921E76CF8D00070E77 /* VLCEventManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		220976A21E76CF8D00070E77 /* VLCLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 220976941E76CF8D00070E77 /* VLCLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		220976A31E76CF8D00070E77 /* VLCMedia.h in Headers */ = {isa = PBXBuildFile; fileRef = 220976951E76CF8D00070E77 /* VLCMedia.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		220976A41E76CF8D00070E77 /* VLCMediaThumbnailer.h in Headers */ = {isa = PBXBuildFile; fileRef = 220976961E76CF8D00070E77 /* VLCMediaThumbnailer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		220976A51E76CF8D00070E77 /* VLCMediaList.h in Headers */ = {isa = PBXBuildFile; fileRef = 220976971E76CF8D00070E77 /* VLCMediaList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		220976A61E76CF8D00070E77 /* VLCMediaPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 220976981E76CF8D00070E77 /* VLCMediaPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		220976A71E76CF8D00070E77 /* VLCMediaListPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 220976991E76CF8D00070E77 /* VLCMediaListPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		220976A81E76CF8D00070E77 /* VLCMediaDiscoverer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2209769A1E76CF8D00070E77 /* VLCMediaDiscoverer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		220976A91E76CF8D00070E77 /* VLCTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 2209769B1E76CF8D00070E77 /* VLCTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		220976AA1E76CF8D00070E77 /* VLCAudio.h in Headers */ = {isa = PBXBuildFile; fileRef = 2209769C1E76CF8D00070E77 /* VLCAudio.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		226380221E72006200EADBAE /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 226380211E72006200EADBAE /* libiconv.tbd */; };
 		226380241E72006F00EADBAE /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 226380231E72006F00EADBAE /* libc++.tbd */; };
 		226380261E72007500EADBAE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226380251E72007500EADBAE /* AVFoundation.framework */; };
@@ -244,19 +244,19 @@
 			files = (
 				220976A61E76CF8D00070E77 /* VLCMediaPlayer.h in Headers */,
 				220976A51E76CF8D00070E77 /* VLCMediaList.h in Headers */,
-				2209769E1E76CF8D00070E77 /* MobileVLCKit.h in Headers */,
-				220976A01E76CF8D00070E77 /* VLCLibVLCBridging.h in Headers */,
 				220976A31E76CF8D00070E77 /* VLCMedia.h in Headers */,
-				220976651E76CF1300070E77 /* DynamicMobileVLCKit_Prefix.pch in Headers */,
 				220976AA1E76CF8D00070E77 /* VLCAudio.h in Headers */,
 				220976A81E76CF8D00070E77 /* VLCMediaDiscoverer.h in Headers */,
 				220976A21E76CF8D00070E77 /* VLCLibrary.h in Headers */,
 				220976A11E76CF8D00070E77 /* VLCEventManager.h in Headers */,
-				220976641E76CF1300070E77 /* DynamicMobileVLCKit.h in Headers */,
-				2209769F1E76CF8D00070E77 /* vlc-plugins.h in Headers */,
 				220976A91E76CF8D00070E77 /* VLCTime.h in Headers */,
 				220976A41E76CF8D00070E77 /* VLCMediaThumbnailer.h in Headers */,
 				220976A71E76CF8D00070E77 /* VLCMediaListPlayer.h in Headers */,
+				2209769E1E76CF8D00070E77 /* MobileVLCKit.h in Headers */,
+				220976A01E76CF8D00070E77 /* VLCLibVLCBridging.h in Headers */,
+				220976651E76CF1300070E77 /* DynamicMobileVLCKit_Prefix.pch in Headers */,
+				220976641E76CF1300070E77 /* DynamicMobileVLCKit.h in Headers */,
+				2209769F1E76CF8D00070E77 /* vlc-plugins.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
